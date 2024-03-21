@@ -1,6 +1,3 @@
-
-
-
 // Merge 3 arrays into one
 // collection1 & collection3 are sorted min -> max
 // collection2 is sorted max -> min
@@ -39,10 +36,11 @@ const merge = (collection1: number[], collection2: number[], collection3: number
     return mergedArray
 }
 
-
-// const result = merge([1, 2, 3], [6, 5, 2], [7, 8, 9]);
-// console.log(result);
-
-// console.log(merge(collection1, collection2, collection3))
+const collection1 = [1, 2, 3];
+const collection2 = [6, 5, 2];
+const collection3 = [7, 8, 9];
+const merged = merge(collection1, collection2, collection3);
+console.log("Inputs: ", collection1, collection2, collection3)
+console.log("Merged: ", merged);
 
 export default merge 
